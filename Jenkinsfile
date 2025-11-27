@@ -7,7 +7,7 @@ pipeline {
     
     environment {
         PROJECT_NAME = "jenkins-test"
-        SONARQUBE_URL = "http://sonarqube:9000"
+        SONARQUBE_URL = "http://sonarQubePruebas:9000"
         SONARQUBE_TOKEN = 'squ_192869129e71837c12c9c1fb3b0d1bbd498e71b5'
         NVD_API_KEY = credentials('nvdApiKey')
         TARGET_URL = 'http://172.24.81.81:5000'
