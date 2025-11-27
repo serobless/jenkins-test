@@ -66,6 +66,7 @@ pipeline {
         stage('OWASP Dependency-Check') {
             steps {
                 echo '===== Ejecutando OWASP Dependency-Check ====='
+                sh 'mkdir -p dependency-check-report'
                 dependencyCheck additionalArguments: """
                     --scan ./ \
                     --format HTML \
